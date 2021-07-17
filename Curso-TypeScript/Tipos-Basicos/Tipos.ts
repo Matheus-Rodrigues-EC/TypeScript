@@ -122,3 +122,14 @@ const moto: automovel2 = {
     ano: 2020
 }
 
+// Type Assertion
+const minhaIdade: any = 23;
+(minhaIdade as number).toString();
+<number>minhaIdade.toString();
+
+const input = document.getElementById("objeto01") as HTMLInputElement;
+console.log(input.value);
+
+const input2 = <HTMLInputElement>document.getElementById("objeto01");
+console.log(input2.value);
+
