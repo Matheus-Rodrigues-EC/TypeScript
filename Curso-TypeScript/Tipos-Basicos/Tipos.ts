@@ -65,4 +65,31 @@ function exibirNota(nota:number | string){
     console.log(`Sua nota eh ${nota}`);
 }
 
-exibirNota('10')
+exibirNota('10');
+
+// Alias
+type Funcionarios = Array<string> // | number | boolean;
+const funcionarios: Funcionarios = ['Matt', 'Tay', 'Stef'];
+
+function entrevista(funcionario: Funcionarios){
+    // faz a entrevista...
+}
+
+type Aluno = {
+    nome: string,
+    sobrenome: string,
+    matricula: number
+}
+
+type alunos = Array<Aluno>;
+const registro: Aluno[] = [{
+    nome: 'Matt',
+    sobrenome: 'Rodrigues',
+    matricula: 2021
+}]
+
+function tratarAlunos (alunos: Aluno[]){
+    for(let aluno of alunos){
+        console.log(`Nome do aluno: ${aluno.nome}`);
+    }
+}
