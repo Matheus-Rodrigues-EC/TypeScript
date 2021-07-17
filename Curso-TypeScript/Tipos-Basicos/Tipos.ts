@@ -46,3 +46,15 @@ criar( {
     //Deve receber um tipo Objeto, não aceita String, int, ou afins.
 })
 
+// Never
+function loopInfinito(): never {
+    while(true);
+}
+
+function erro(msg: string): never{
+    throw new Error(msg);
+}
+
+function falha(){
+    return erro('Algo Falhou.');
+}
