@@ -93,3 +93,32 @@ function tratarAlunos (alunos: Aluno[]){
         console.log(`Nome do aluno: ${aluno.nome}`);
     }
 }
+
+// nulos e opicionais
+type automovel = {
+    nome: string,
+    marca: string,
+    ano: number,
+    cor: string | null | number;
+}
+
+const carro: automovel = {
+    nome: 'opala',
+    marca: 'chevrolet',
+    ano: 2020,
+    cor: 3
+}
+
+type automovel2 = {
+    nome: string,
+    marca: string,
+    ano: number,
+    cor?: string
+}
+
+const moto: automovel2 = {
+    nome: 'opala',
+    marca: 'chevrolet',
+    ano: 2020
+}
+
